@@ -1,0 +1,63 @@
+// IMAGE LAYOUTS
+.image-container { margin: 20px 0; }
+
+.image-block,
+.image-list {
+    background: #111;
+    border: 1px solid #444;
+    border-bottom: 1px solid @bungie-blue;
+    float: left;
+    margin: 0 20px 20px 0;
+    padding: 10px;
+    position: relative;
+
+    span {
+        color: #666;
+        display: block;
+        font-style: italic;
+    }
+}
+
+.image-block {
+    width: 255px;
+
+    img { width: 255px; }
+
+    [class*='action-'] {
+        color: @basic-grey;
+        font-size: 20px;
+        position: absolute;
+        text-decoration: none;
+        top: 5px;
+    }
+    .action-close {
+        font-size: 22px;
+        right: 5px;
+    }
+    .action-love {
+        font-size: 18px;
+        right: 24px;
+    }
+    .action-share {
+        right: 43px;
+        top: 4px;
+    }
+
+    .action-close:hover, .action-close.active { color: @bungie-blue; }
+    .action-love:hover, .action-love.active { color: @love-red; }
+    .action-share:hover, .action-share.active { color: @share-green; }
+}
+
+.image-list {
+    width: 100%;
+
+    img {
+        float: left;
+        height: 100px;
+        margin-right: 20px;
+    }
+    .content {
+        float: left;
+        max-width: 375px;
+    }
+}

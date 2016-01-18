@@ -1,0 +1,19 @@
+<h2>{title}</h2>
+<p>{description}</p>
+<p><a href="{link}" target="_blank">{link}</a></p>
+
+<div class="image-container">
+    {#items}
+    <div class="image-list">
+        {#media.m}
+        <img src="{.}" height="100" />
+        {/media.m}
+        <div class="content">
+            <h4>{title}</h4>
+            <span>link: <a href="{link}" alt="{title}" target="_blank">view on flickr</a></span>
+            <span>author: {author}</span>
+            <span>tags: {tags}</span>
+        </div>
+    </div>
+    {/items}
+</div>

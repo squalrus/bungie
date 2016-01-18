@@ -1,0 +1,19 @@
+<h2>{title}</h2>
+<p>{description}</p>
+<p><a href="{link}" target="_blank">{link}</a></p>
+
+<div class="image-container">
+    {#items}
+    <div class="image-block">
+        <h4>{title}</h4>
+        {#media.m}
+        <img src="{.}" width="255" />
+        {/media.m}
+        <span>link: <a href="{link}" alt="{title}" target="_blank">view on flickr</a></span>
+        <span>author: {author}</span>
+        <a href="#" class="action-share">&spades;</a>
+        <a href="#" class="action-love">&hearts;</a>
+        <a href="#" class="action-close">&times;</a>
+    </div>
+    {/items}
+</div>
